@@ -1,3 +1,5 @@
+// Stock Market Search App by Brian Moon
+
 // creating an express application in our js app
 const express = require("express"); // pulls express into our app
 const app = express(); // allows us to use express
