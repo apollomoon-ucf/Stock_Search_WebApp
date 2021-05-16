@@ -21,6 +21,11 @@ app.get("/", function (req, res) {
   res.render("home", { factorial: "Factorial of 10 is: " + factorial(10) });
 });
 
+// routing to second dynamic page
+app.get("/stocknews", function (req, res) {
+  res.render("stocknews");
+});
+
 // factorial function
 function factorial(num) {
   if (num < 0) return -1;
