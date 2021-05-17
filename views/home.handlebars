@@ -1,2 +1,65 @@
-<h1>This is my Handlebars Homepage...</h1>
-{{!-- <p>{{factorial}}</p> --}}
+<div class="jumbotron">
+  <h1 class="display-7">{{stock_call.companyName}} ({{stock_call.symbol}})</h1>
+  <p class="lead">
+    <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Latest Price: </strong>${{stock_call.latestPrice}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Percent Change: </strong>${{stock_call.change}}<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Previous Close: </strong>${{stock_call.previousClose}}  &nbsp; &nbsp; <strong>Open: </strong>${{stock_call.open}} <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>52wk High: </strong>${{stock_call.week52High}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>52wk Low: </strong>${{stock_call.week52Low}}<br /></p>
+        
+    </div>
+
+
+  {{! <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/stocknews" role="button">Click here
+      for the latest stock market news</a>
+  </p> }}
+</div>
+
+<div class="inner">
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div id="tradingview_4ff7a"></div>
+    <div class="tradingview-widget-copyright"><a
+        href="https://www.tradingview.com/symbols/NASDAQ-AAPL/"
+        rel="noopener"
+        target="_blank"
+      ><span class="blue-text">AAPL Chart</span></a>
+      by TradingView</div>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/tv.js"
+    ></script>
+    <script type="text/javascript">
+      new TradingView.widget( { "width": 800, "height": 500, "symbol":
+      "NASDAQ:AAPL", "interval": "D", "timezone": "Etc/UTC", "theme": "light",
+      "style": "1", "locale": "en", "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false, "allow_symbol_change": true, "container_id":
+      "tradingview_4ff7a" } );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</div>
+
+{{! <img
+  src="https://www.koppr.in/wp-content/uploads/2020/06/Top-things-to-know-about-Stock-Market-Trading-1080x675.jpg"
+  class="img-fluid"
+  alt="..."
+/> }}
+
+{{!-- <h1>{{stock_call.companyName}} ({{stock_call.symbol}})</h1>
+<br /> --}}
+{{!-- <strong>Latest Price: </strong>${{stock_call.latestPrice}}<br />
+<strong>Open: </strong>${{stock_call.open}}<br />
+<strong>Previous Close: </strong>${{stock_call.previousClose}}<br />
+<strong>Percent Change: </strong>${{stock_call.change}}<br />
+<strong>Market Cap: </strong>${{stock_call.marketCap}}<br />
+<strong>YTD Change: </strong>${{stock_call.ytdChange}}<br />
+<strong>52wk High: </strong>${{stock_call.week52High}}<br />
+<strong>52wk Low: </strong>${{stock_call.week52Low}}<br />
+<br /> --}}
+{{! print api to screen }}
+{{!-- {{#each stock_call}}
+  {{@key}}
+  :
+  {{this}}<br />
+{{/each}} --}}
