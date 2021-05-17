@@ -32,7 +32,7 @@
         background-size: 100%;
         }
         .outer {
-            width: 500px;
+            width: 600px;
             margin-left: auto;
             margin-right: auto;
             background-color:;
@@ -40,8 +40,8 @@
             }
 
         .inner {
-            margin-left: -165px;
-            margin-right: 165px;
+            margin-left: -120px;
+            margin-right: 120px;
             background-color:;
             }
         </style>
@@ -70,11 +70,12 @@
                 <a class="nav-link" href="/stocknews">Stock News</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" action="/" method="POST">
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Stock Symbol (ticker)"
+                placeholder="Enter Stock Symbol (ticker)"
+                name="stock_ticker"
                 aria-label="Search"
               />
               <button

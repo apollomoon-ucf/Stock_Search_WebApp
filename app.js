@@ -8,16 +8,21 @@ const app = express(); // allows us to use express
 const exphbs = require("express-handlebars");
 // we need to add path to app
 const path = require("path");
+const { post } = require("request");
 // request for api
 const request = require("request");
-
 // telling app which port to listen on; using OR for webhosts that are using their own port (we're using 5000)
 const PORT = process.env.PORT || 5000;
 
+// parser middleware
+app.use(express.urlencoded());
+
 // API Key: pk_acb37dd339c446f2b589742ab463a39a
-function call_api(requestcompleted) {
+function call_api(requestcompleted, ticker) {
   request(
-    "https://cloud.iexapis.com/stable/stock/fb/quote?token=pk_acb37dd339c446f2b589742ab463a39a",
+    "https://cloud.iexapis.com/stable/stock/" +
+      ticker +
+      "/quote?token=pk_acb37dd339c446f2b589742ab463a39a",
     { json: true },
     (err, res, body) => {
       if (err) {
@@ -57,11 +62,22 @@ app.set("view engine", "handlebars");
 // app.get("/", function (req, res) {
 //   res.render("home", { stock_call: returned_request.symbol });
 // });
-// for function version of api call
+// for function version of api call (get)
 app.get("/", function (req, res) {
   call_api(function (request) {
     res.render("home", { stock_call: request });
-  });
+  }, "tsla");
+});
+
+// for function version of api call (psot)
+app.post("/", function (req, res) {
+  call_api(function (request) {
+    posted_data = req.body.stock_ticker;
+    res.render("home", {
+      stock_call: request,
+      posted_data_return: posted_data,
+    });
+  }, req.body.stock_ticker);
 });
 
 // routing to second dynamic page

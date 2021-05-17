@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1 class="display-7">{{stock_call.companyName}} ({{stock_call.symbol}})</h1>
+  <h1 class="display-7">&nbsp;&nbsp;&nbsp;&nbsp;{{stock_call.companyName}} ({{stock_call.symbol}})</h1>
   <p class="lead">
     <div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Latest Price: </strong>${{stock_call.latestPrice}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Percent Change: </strong>${{stock_call.change}}<br />
@@ -23,15 +23,14 @@
         href="https://www.tradingview.com/symbols/NASDAQ-AAPL/"
         rel="noopener"
         target="_blank"
-      ><span class="blue-text">AAPL Chart</span></a>
-      by TradingView</div>
+      ></div>
     <script
       type="text/javascript"
       src="https://s3.tradingview.com/tv.js"
     ></script>
     <script type="text/javascript">
       new TradingView.widget( { "width": 800, "height": 500, "symbol":
-      "NASDAQ:AAPL", "interval": "D", "timezone": "Etc/UTC", "theme": "light",
+      '{{posted_data_return}}', "interval": "D", "timezone": "Etc/UTC", "theme": "light",
       "style": "1", "locale": "en", "toolbar_bg": "#f1f3f6",
       "enable_publishing": false, "allow_symbol_change": true, "container_id":
       "tradingview_4ff7a" } );
@@ -39,6 +38,8 @@
   </div>
   <!-- TradingView Widget END -->
 </div>
+
+{{!-- {{posted_data_return}} --}}
 
 {{! <img
   src="https://www.koppr.in/wp-content/uploads/2020/06/Top-things-to-know-about-Stock-Market-Trading-1080x675.jpg"
