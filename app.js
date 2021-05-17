@@ -66,7 +66,7 @@ app.set("view engine", "handlebars");
 app.get("/", function (req, res) {
   call_api(function (request) {
     res.render("home", { stock_call: request });
-  }, "tsla");
+  }, "aapl");
 });
 
 // for function version of api call (psot)
