@@ -14,6 +14,5 @@ Stock News Page:
 >
 >Widgets credit: tradingview.com
 >
->html template credit: w3
 
 Brian Moon 2021
