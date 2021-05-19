@@ -13,3 +13,5 @@ Stock News Page:
 >Website background image credit: koppr.in/wp-content/uploads/2020/06/Top-things-to-know-about-Stock-Market-Trading-1080x675.jpg
 >
 > Widgets credit: tradingview.com
+
+Brian Moon 2021
