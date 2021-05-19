@@ -1,5 +1,5 @@
 # Stock Search Web App
-> Testing web dev by building a lightweight stock app with Node.js, Express, Handlebars, Heroku
+> Testing web dev by building a lightweight stock app with Node.js, Express, Handlebars, and Heroku
 > https://stocksearchysearch.herokuapp.com/ (beta)
 
 Home Page:
