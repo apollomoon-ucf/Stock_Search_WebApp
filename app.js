@@ -69,7 +69,7 @@ app.get("/", function (req, res) {
   }, "aapl");
 });
 
-// for function version of api call (psot)
+// for function version of api call (post)
 app.post("/", function (req, res) {
   call_api(function (request) {
     posted_data = req.body.stock_ticker;
