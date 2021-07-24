@@ -20,7 +20,6 @@ dotenv.config({ path: "./config.env" });
 // parser middleware
 app.use(express.urlencoded());
 
-// API Key: pk_acb37dd339c446f2b589742ab463a39a
 function call_api(requestcompleted, ticker) {
   request(
     "https://cloud.iexapis.com/stable/stock/" +
