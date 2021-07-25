@@ -1,6 +1,23 @@
 # Stock Search Web App
+
 > Testing web dev by building a lightweight stock app with Node.js, Express, Handlebars, Heroku, and IEX Cloud API
-> 
+
+(Home - Desktop beta)
+![screenshot_home](https://user-images.githubusercontent.com/25870426/126885760-1fb677c5-f632-41e8-8241-ecfaea183d8c.png)
+
+(Stock search section - Desktop beta)
+![screenshot_searching](https://user-images.githubusercontent.com/25870426/126885769-8fdf9949-e4b1-4da3-8310-e6074d68fecc.png)
+
+(Stock news widget page - Desktop beta)
+![screenschot_stocknews_widget_page](https://user-images.githubusercontent.com/25870426/126885778-62e70037-4342-4305-85f1-13489372c048.png)
+
+(Simple about me page - Desktop beta)
+![screenshot_about_me](https://user-images.githubusercontent.com/25870426/126885788-286bc0d1-4a01-4c7f-ac3b-e3cb6e365fce.png)
+
+---
+
+> > \***\*OLD SITE DESIGN\*\***
+
 > (desktop beta) https://stocksearchysearch.herokuapp.com/ mobile coming soon
 
 Home Page:
@@ -10,9 +27,8 @@ Stock Search Section:
 Stock News Page:
 ![Screen Shot 2021-05-18 at 11 34 22 PM](https://user-images.githubusercontent.com/25870426/118753046-25fac880-b832-11eb-821f-8179950c8a94.png)
 
->Website background image credit: koppr.in/wp-content/uploads/2020/06/Top-things-to-know-about-Stock-Market-Trading-1080x675.jpg
+> Website background image credit: koppr.in/wp-content/uploads/2020/06/Top-things-to-know-about-Stock-Market-Trading-1080x675.jpg
 >
->Widgets credit: tradingview.com
->
+> Widgets credit: tradingview.com
 
 Brian Moon 2021
