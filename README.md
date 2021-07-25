@@ -8,7 +8,7 @@
 ![screenshot_home](https://user-images.githubusercontent.com/25870426/126885760-1fb677c5-f632-41e8-8241-ecfaea183d8c.png)
 
 (Stock search section - Desktop beta)
-![screenshot_searching](https://user-images.githubusercontent.com/25870426/126885769-8fdf9949-e4b1-4da3-8310-e6074d68fecc.png)
+![screenshot_searching_v2](https://user-images.githubusercontent.com/25870426/126887852-3986cfc7-3115-4dc8-92f5-78d8fd3665f6.png)
 
 (Stock news widget page - Desktop beta)
 ![screenschot_stocknews_widget_page](https://user-images.githubusercontent.com/25870426/126885778-62e70037-4342-4305-85f1-13489372c048.png)
@@ -19,8 +19,6 @@
 ---
 
 > > \***\*OLD SITE DESIGN\*\***
-
-> (desktop beta) https://stocksearchysearch.herokuapp.com/ mobile coming soon
 
 Home Page:
 ![Screen Shot 2021-05-18 at 11 28 00 PM](https://user-images.githubusercontent.com/25870426/118752999-18454300-b832-11eb-81fe-fa354960f9ff.png)
