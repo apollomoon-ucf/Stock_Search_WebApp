@@ -8,7 +8,7 @@
 ![screenshot_home](https://user-images.githubusercontent.com/25870426/126885760-1fb677c5-f632-41e8-8241-ecfaea183d8c.png)
 
 (Stock search section - Desktop beta)
-![screenshot_searching_v2](https://user-images.githubusercontent.com/25870426/126887852-3986cfc7-3115-4dc8-92f5-78d8fd3665f6.png)
+![screenshot_searching_v2](https://user-images.githubusercontent.com/25870426/126887941-9d5a98dc-dcde-440a-be68-abce01c3a429.png)
 
 (Stock news widget page - Desktop beta)
 ![screenschot_stocknews_widget_page](https://user-images.githubusercontent.com/25870426/126885778-62e70037-4342-4305-85f1-13489372c048.png)
