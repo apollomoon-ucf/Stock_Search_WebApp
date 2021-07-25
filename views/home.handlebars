@@ -1,3 +1,31 @@
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width: 1564px">
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-32" id="contact">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          Stock Search - Fast and easy stock market searching tool
+        </h3>
+        <p>Enter stock symbol (ticker) below to get started:</p>
+        <form action="/?page_y=975" method="POST">
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="Stock Symbol (ticker)"
+            required
+            name="stock_ticker"
+          />
+          <button class="w3-button w3-black w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i>
+            Search
+          </button>
+        </form>
+        {{{body}}}
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+
 <div class="jumbotron">
   <h1 class="display-7">&nbsp;&nbsp;&nbsp;&nbsp;{{stock_call.companyName}} ({{stock_call.symbol}})</h1>
   <p class="lead">

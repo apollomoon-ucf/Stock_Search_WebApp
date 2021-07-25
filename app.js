@@ -4,8 +4,15 @@
 const { object } = require("assert-plus");
 const express = require("express"); // pulls express into our app
 const app = express(); // allows us to use express
-// add a reference to handlevars
+// add a reference to handlebars
 const exphbs = require("express-handlebars");
+
+// env
+const dotenv = require("dotenv");
+// point to env file
+dotenv.config({ path: "./config.env" });
+app.use(express.static("views/images"));
+
 // we need to add path to app
 const path = require("path");
 const { post } = require("request");
@@ -13,9 +20,6 @@ const { post } = require("request");
 const request = require("request");
 // telling app which port to listen on; using OR for webhosts that are using their own port (we're using 5000)
 const PORT = process.env.PORT || 5000;
-
-// point to env file
-dotenv.config({ path: "./config.env" });
 
 // parser middleware
 app.use(express.urlencoded());
@@ -37,24 +41,6 @@ function call_api(requestcompleted, ticker) {
     }
   );
 }
-// MY SIMPLE API CALL
-// var returned_request = request(
-//   "https://cloud.iexapis.com/stable/stock/fb/quote?token=pk_acb37dd339c446f2b589742ab463a39a",
-//   { json: true }
-// );
-// error handling version of api request
-// request(
-//   "https://cloud.iexapis.com/stable/stock/fb/quote?token=pk_acb37dd339c446f2b589742ab463a39a",
-//   { json: true },
-//   (err, res, body) => {
-//     if (err) {
-//       return console.log(err);
-//     }
-//     if (res.statusCode === 200) {
-//       console.log(body);
-//     }
-//   }
-// );
 
 // Set handlebars middleware
 app.engine("handlebars", exphbs());
@@ -85,6 +71,11 @@ app.post("/", function (req, res) {
 
 // routing to second dynamic page
 app.get("/stocknews", function (req, res) {
+  res.render("stocknews");
+});
+
+// routing to second dynamic page
+app.post("/stocknews", function (req, res) {
   res.render("stocknews");
 });
 
